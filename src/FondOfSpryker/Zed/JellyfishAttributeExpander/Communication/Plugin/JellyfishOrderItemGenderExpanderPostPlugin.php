@@ -6,6 +6,9 @@ use FondOfSpryker\Zed\JellyfishExtension\Dependency\Plugin\JellyfishOrderItemExp
 use Generated\Shared\Transfer\JellyfishOrderItemTransfer;
 use Orm\Zed\Sales\Persistence\SpySalesOrderItem;
 
+/**
+ * @method \FondOfSprkyer\Zed\JellyfishAttributeExpander\Business\JellyfishAttributeExpanderFacadeInterface getFacade()
+ */
 class JellyfishOrderItemGenderExpanderPostPlugin implements JellyfishOrderItemExpanderPostMapPluginInterface
 {
     /**
@@ -18,7 +21,7 @@ class JellyfishOrderItemGenderExpanderPostPlugin implements JellyfishOrderItemEx
         JellyfishOrderItemTransfer $jellyfishOrderItemTransfer,
         SpySalesOrderItem $salesOrderItem
     ): JellyfishOrderItemTransfer {
-        $jellyfishOrderItemTransfer->setGender("male");
+        $jellyfishOrderItemTransfer->setGender($this->getFacade()->getGender($jellyfishOrderItemTransfer));
 
         return $jellyfishOrderItemTransfer;
     }
