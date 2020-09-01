@@ -26,8 +26,8 @@ class JellyfishAttributeExpanderToProductResourceAliasStorageClientBridge implem
      *
      * @return array|null
      */
-    public function findProductAbstractStorageDataBySku(string $sku, string $localeName): ?array
+    public function getProductConcreteStorageDataBySku(string $sku, string $localeName): ?array
     {
-        return $this->productResourceAliasStorageClient->findProductAbstractStorageDataBySku($sku, $localeName);
+        return $this->productResourceAliasStorageClient->getProductConcreteStorageDataBySku($sku, $localeName);
     }
 }

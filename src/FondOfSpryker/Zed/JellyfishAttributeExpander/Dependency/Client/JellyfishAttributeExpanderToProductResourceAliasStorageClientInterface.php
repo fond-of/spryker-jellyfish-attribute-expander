@@ -10,5 +10,5 @@ interface JellyfishAttributeExpanderToProductResourceAliasStorageClientInterface
      *
      * @return array|null
      */
-    public function findProductAbstractStorageDataBySku(string $sku, string $localeName): ?array;
+    public function getProductConcreteStorageDataBySku(string $sku, string $localeName): ?array;
 }
