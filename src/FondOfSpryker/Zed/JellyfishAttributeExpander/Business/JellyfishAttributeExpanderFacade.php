@@ -3,11 +3,12 @@
 namespace FondOfSpryker\Zed\JellyfishAttributeExpander\Business;
 
 use Generated\Shared\Transfer\JellyfishOrderItemTransfer;
+use Spryker\Zed\Kernel\Business\AbstractFacade;
 
 /**
  * @method \FondOfSpryker\Zed\JellyfishAttributeExpander\Business\JellyfishAttributeExpanderBusinessFactory getFactory()
  */
-class JellyfishAttributeExpanderFacade implements JellyfishAttributeExpanderFacadeInterface
+class JellyfishAttributeExpanderFacade extends AbstractFacade implements JellyfishAttributeExpanderFacadeInterface
 {
     /**
      * @param \Generated\Shared\Transfer\JellyfishOrderItemTransfer $jellyfishOrderItemTransfer
