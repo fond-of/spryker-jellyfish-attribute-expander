@@ -27,7 +27,7 @@ class JellyfishAttributeGenderReader implements JellyfishAttributeGenderReaderIn
      */
     public function getGender(JellyfishOrderItemTransfer $jellyfishOrderItemTransfer): ?string
     {
-        return $jellyfishOrderItemTransfer->getSku();
+        return json_encode($this->productResourceAliasStorageClient->findProductAbstractStorageDataBySku($jellyfishOrderItemTransfer->getSku(), "en_us"));
         //return $this->productResourceAliasStorageClient->findProductAbstractStorageDataBySku($jellyfishOrderItemTransfer->getSku(), "de_de")["gender"] ?? null;
     }
 }
