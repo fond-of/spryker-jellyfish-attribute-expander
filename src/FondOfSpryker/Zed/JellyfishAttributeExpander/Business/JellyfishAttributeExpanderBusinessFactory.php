@@ -1,17 +1,17 @@
 <?php
 
-namespace FondOfSprkyer\Zed\JellyfishAttributeExpander\Business;
+namespace FondOfSpryker\Zed\JellyfishAttributeExpander\Business;
 
-use FondOfSprkyer\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeGenderReader;
-use FondOfSprkyer\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeGenderReaderInterface;
-use FondOfSprkyer\Zed\JellyfishAttributeExpander\JellyfishAttributeExpanderDependencyProvider;
+use FondOfSpryker\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeGenderReader;
+use FondOfSpryker\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeGenderReaderInterface;
+use FondOfSpryker\Zed\JellyfishAttributeExpander\JellyfishAttributeExpanderDependencyProvider;
 use Spryker\Client\ProductResourceAliasStorage\ProductResourceAliasStorageClientInterface;
 use Spryker\Zed\Kernel\Business\AbstractBusinessFactory;
 
 class JellyfishAttributeExpanderBusinessFactory extends AbstractBusinessFactory
 {
     /**
-     * @return \FondOfSprkyer\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeGenderReaderInterface
+     * @return \FondOfSpryker\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeGenderReaderInterface
      */
     public function createJellyfishAttributeGenderReader(): JellyfishAttributeGenderReaderInterface
     {

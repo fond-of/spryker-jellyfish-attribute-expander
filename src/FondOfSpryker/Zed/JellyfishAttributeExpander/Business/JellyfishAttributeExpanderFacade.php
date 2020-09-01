@@ -1,11 +1,11 @@
 <?php
 
-namespace FondOfSprkyer\Zed\JellyfishAttributeExpander\Business;
+namespace FondOfSpryker\Zed\JellyfishAttributeExpander\Business;
 
 use Generated\Shared\Transfer\JellyfishOrderItemTransfer;
 
 /**
- * @method \FondOfSprkyer\Zed\JellyfishAttributeExpander\Business\JellyfishAttributeExpanderBusinessFactory getFactory()
+ * @method \FondOfSpryker\Zed\JellyfishAttributeExpander\Business\JellyfishAttributeExpanderBusinessFactory getFactory()
  */
 class JellyfishAttributeExpanderFacade implements JellyfishAttributeExpanderFacadeInterface
 {

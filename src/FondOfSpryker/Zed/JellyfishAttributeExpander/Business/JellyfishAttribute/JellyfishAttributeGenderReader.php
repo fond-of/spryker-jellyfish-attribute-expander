@@ -1,6 +1,6 @@
 <?php
 
-namespace FondOfSprkyer\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute;
+namespace FondOfSpryker\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute;
 
 use Generated\Shared\Transfer\JellyfishOrderItemTransfer;
 use Spryker\Client\ProductResourceAliasStorage\ProductResourceAliasStorageClientInterface;

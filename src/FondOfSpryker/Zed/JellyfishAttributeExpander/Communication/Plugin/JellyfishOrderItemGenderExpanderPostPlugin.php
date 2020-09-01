@@ -21,8 +21,7 @@ class JellyfishOrderItemGenderExpanderPostPlugin implements JellyfishOrderItemEx
         JellyfishOrderItemTransfer $jellyfishOrderItemTransfer,
         SpySalesOrderItem $salesOrderItem
     ): JellyfishOrderItemTransfer {
-        //$this->getFacade()->getGender($jellyfishOrderItemTransfer)
-        $jellyfishOrderItemTransfer->setGender("Moin");
+        $jellyfishOrderItemTransfer->setGender($this->getFacade()->getGender($jellyfishOrderItemTransfer));
 
         return $jellyfishOrderItemTransfer;
     }

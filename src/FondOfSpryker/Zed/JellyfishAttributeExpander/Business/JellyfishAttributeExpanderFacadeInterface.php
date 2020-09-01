@@ -1,6 +1,6 @@
 <?php
 
-namespace FondOfSprkyer\Zed\JellyfishAttributeExpander\Business;
+namespace FondOfSpryker\Zed\JellyfishAttributeExpander\Business;
 
 use Generated\Shared\Transfer\JellyfishOrderItemTransfer;
 
