@@ -5,11 +5,12 @@ namespace FondOfSpryker\Zed\JellyfishAttributeExpander\Communication\Plugin;
 use FondOfSpryker\Zed\JellyfishExtension\Dependency\Plugin\JellyfishOrderItemExpanderPostMapPluginInterface;
 use Generated\Shared\Transfer\JellyfishOrderItemTransfer;
 use Orm\Zed\Sales\Persistence\SpySalesOrderItem;
+use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 
 /**
  * @method \FondOfSprkyer\Zed\JellyfishAttributeExpander\Business\JellyfishAttributeExpanderFacadeInterface getFacade()
  */
-class JellyfishOrderItemGenderExpanderPostPlugin implements JellyfishOrderItemExpanderPostMapPluginInterface
+class JellyfishOrderItemGenderExpanderPostPlugin extends AbstractPlugin implements JellyfishOrderItemExpanderPostMapPluginInterface
 {
     /**
      * @param \Generated\Shared\Transfer\JellyfishOrderItemTransfer $jellyfishOrderItemTransfer
