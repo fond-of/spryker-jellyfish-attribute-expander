@@ -2,20 +2,20 @@
 
 namespace FondOfSpryker\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute;
 
+use FondOfSpryker\Zed\JellyfishAttributeExpander\Dependency\Client\JellyfishAttributeExpanderToProductResourceAliasStorageClientInterface;
 use Generated\Shared\Transfer\JellyfishOrderItemTransfer;
-use Spryker\Client\ProductResourceAliasStorage\ProductResourceAliasStorageClientInterface;
 
 class JellyfishAttributeGenderReader implements JellyfishAttributeGenderReaderInterface
 {
     /**
-     * @var \Spryker\Client\ProductResourceAliasStorage\ProductResourceAliasStorageClientInterface
+     * @var \FondOfSpryker\Zed\JellyfishAttributeExpander\Dependency\Client\JellyfishAttributeExpanderToProductResourceAliasStorageClientInterface
      */
     protected $productResourceAliasStorageClient;
 
     /**
-     * @param \Spryker\Client\ProductResourceAliasStorage\ProductResourceAliasStorageClientInterface $productResourceAliasStorageClient
+     * @param \FondOfSpryker\Zed\JellyfishAttributeExpander\Dependency\Client\JellyfishAttributeExpanderToProductResourceAliasStorageClientInterface $productResourceAliasStorageClient
      */
-    public function __construct(ProductResourceAliasStorageClientInterface $productResourceAliasStorageClient)
+    public function __construct(JellyfishAttributeExpanderToProductResourceAliasStorageClientInterface $productResourceAliasStorageClient)
     {
         $this->productResourceAliasStorageClient = $productResourceAliasStorageClient;
     }
