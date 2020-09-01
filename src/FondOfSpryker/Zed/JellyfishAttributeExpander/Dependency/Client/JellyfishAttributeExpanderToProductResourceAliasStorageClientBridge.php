@@ -1,7 +1,7 @@
 <?php
 
 
-namespace FondOfSpryker\Zed\JellyfishExtension\Dependency\Client;
+namespace FondOfSpryker\Zed\JellyfishAttributeExpander\Dependency\Client;
 
 use Spryker\Client\ProductResourceAliasStorage\ProductResourceAliasStorageClient;
 

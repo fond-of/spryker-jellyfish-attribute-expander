@@ -2,7 +2,7 @@
 
 namespace FondOfSpryker\Zed\JellyfishAttributeExpander;
 
-use FondOfSpryker\Zed\JellyfishExtension\Dependency\Client\JellyfishAttributeExpanderToProductResourceAliasStorageClientBridge;
+use FondOfSpryker\Zed\JellyfishAttributeExpander\Dependency\Client\JellyfishAttributeExpanderToProductResourceAliasStorageClientBridge;
 use Spryker\Zed\Kernel\AbstractBundleDependencyProvider;
 use Spryker\Zed\Kernel\Container;
 
