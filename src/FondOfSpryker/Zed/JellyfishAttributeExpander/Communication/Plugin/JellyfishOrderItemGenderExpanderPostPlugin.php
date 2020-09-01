@@ -8,7 +8,7 @@ use Orm\Zed\Sales\Persistence\SpySalesOrderItem;
 use Spryker\Zed\Kernel\Communication\AbstractPlugin;
 
 /**
- * @method \FondOfSprkyer\Zed\JellyfishAttributeExpander\Business\JellyfishAttributeExpanderFacadeInterface getFacade()
+ * @method \FondOfSpryker\Zed\JellyfishAttributeExpander\Business\JellyfishAttributeExpanderFacadeInterface getFacade()
  */
 class JellyfishOrderItemGenderExpanderPostPlugin extends AbstractPlugin implements JellyfishOrderItemExpanderPostMapPluginInterface
 {
