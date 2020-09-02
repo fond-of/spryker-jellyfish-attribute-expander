@@ -1,7 +1,7 @@
 <?php
 
 
-namespace FondOfSprkyer\Zed\JellyfishAttributeExpander\Communication\Plugin;
+namespace FondOfSpryker\Zed\JellyfishAttributeExpander\Communication\Plugin;
 
 use FondOfSpryker\Zed\JellyfishExtension\Dependency\Plugin\JellyfishOrderItemExpanderPostMapPluginInterface;
 use Generated\Shared\Transfer\JellyfishOrderItemTransfer;
