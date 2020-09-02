@@ -14,4 +14,13 @@ interface JellyfishAttributeExpanderFacadeInterface
     public function getGender(
         JellyfishOrderItemTransfer $jellyfishOrderItemTransfer
     ): ?string;
+
+    /**
+     * @param \Generated\Shared\Transfer\JellyfishOrderItemTransfer $jellyfishOrderItemTransfer
+     *
+     * @return array|null
+     */
+    public function getCategories(
+        JellyfishOrderItemTransfer $jellyfishOrderItemTransfer
+    ): ?array;
 }

@@ -2,6 +2,8 @@
 
 namespace FondOfSpryker\Zed\JellyfishAttributeExpander\Business;
 
+use FondOfSprkyer\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeCategoriesReader;
+use FondOfSprkyer\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeCategoriesReaderInterface;
 use FondOfSpryker\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeGenderReader;
 use FondOfSpryker\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeGenderReaderInterface;
 use FondOfSpryker\Zed\JellyfishAttributeExpander\Dependency\Client\JellyfishAttributeExpanderToProductResourceAliasStorageClientInterface;
@@ -10,6 +12,16 @@ use Spryker\Zed\Kernel\Business\AbstractBusinessFactory;
 
 class JellyfishAttributeExpanderBusinessFactory extends AbstractBusinessFactory
 {
+    /**
+     * @return \FondOfSprkyer\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeCategoriesReaderInterface
+     */
+    public function createJellyfishAttributeCategoriesReader(): JellyfishAttributeCategoriesReaderInterface
+    {
+        return new JellyfishAttributeCategoriesReader(
+            $this->getProductResourceAliasStorageClient()
+        );
+    }
+
     /**
      * @return \FondOfSpryker\Zed\JellyfishAttributeExpander\Business\JellyfishAttribute\JellyfishAttributeGenderReaderInterface
      */

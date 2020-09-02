@@ -5,5 +5,6 @@
     <transfer name="JellyfishOrderItem">
         <property name="sku" type="string"/>
         <property name="gender" type="string"/>
+        <property name="categories" type="string"/>
     </transfer>
 </transfers>

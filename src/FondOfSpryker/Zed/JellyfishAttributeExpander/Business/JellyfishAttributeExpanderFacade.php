@@ -22,4 +22,17 @@ class JellyfishAttributeExpanderFacade extends AbstractFacade implements Jellyfi
             ->createJellyfishAttributeGenderReader()
             ->getGender($jellyfishOrderItemTransfer);
     }
+
+    /**
+     * @param \Generated\Shared\Transfer\JellyfishOrderItemTransfer $jellyfishOrderItemTransfer
+     *
+     * @return array|null
+     */
+    public function getCategories(
+        JellyfishOrderItemTransfer $jellyfishOrderItemTransfer
+    ): ?array {
+        return $this->getFactory()
+            ->createJellyfishAttributeCategoriesReader()
+            ->getCategories($jellyfishOrderItemTransfer);
+    }
 }
